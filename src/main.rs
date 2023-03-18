@@ -1,10 +1,9 @@
+// Point of entry for binary crates
+
 use color_eyre::eyre::Result;
 
-mod chapter2;
-mod chapter3;
-mod chapter4;
-mod chapter5;
-mod chapter6;
+mod chapters;
+use chapters::*;
 
 fn main() -> Result<()> {
     color_eyre::install()?;

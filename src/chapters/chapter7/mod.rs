@@ -21,7 +21,7 @@ mod _front_of_house {
 
 pub fn _eat_at_restaurant() {
     // Absolute path
-    crate::chapter7::front_of_house::hosting::add_to_waitlist();
+    crate::chapters::chapter7::front_of_house::hosting::add_to_waitlist();
 
     // Relative path
     front_of_house::hosting::add_to_waitlist();
@@ -58,10 +58,10 @@ mod back_of_house {
 fn deliver_order() {}
 
 // Create an alias
-use crate::chapter7::front_of_house::hosting::add_to_waitlist;
+use crate::chapters::chapter7::front_of_house::hosting::add_to_waitlist;
 
 // Rename via As
-pub use crate::chapter7::back_of_house::Appetizer as Appéritif;
+pub use crate::chapters::chapter7::back_of_house::Appetizer as Appéritif;
 
 pub fn eat_at_restaurant2() {
     // Order a breakfast in the summer with Rye toast

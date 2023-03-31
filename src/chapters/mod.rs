@@ -1,10 +1,11 @@
 use color_eyre::Result;
 
 mod chapter10;
+pub mod chapter11;
 mod chapter2;
 mod chapter3;
 mod chapter4;
-mod chapter5;
+pub mod chapter5;
 mod chapter6;
 pub mod chapter7;
 mod chapter8;
@@ -25,7 +26,7 @@ pub fn main() -> Result<()> {
 
     // chapter9::main()?;
 
-    chapter10::main()?;
+    // chapter10::main()?;
 
     Ok(())
 }

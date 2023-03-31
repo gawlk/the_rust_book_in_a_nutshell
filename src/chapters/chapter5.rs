@@ -32,7 +32,7 @@ struct Point {
 }
 
 #[derive(Clone, Copy, Debug)]
-struct Rectangle {
+pub struct Rectangle {
     width: u32,
     height: u32,
 }
@@ -42,6 +42,10 @@ fn area(rectangle: &Rectangle) -> u32 {
 }
 
 impl Rectangle {
+    pub fn new(width: u32, height: u32) -> Rectangle {
+        Rectangle { width, height }
+    }
+
     fn area(&self) -> u32 {
         self.width * self.height
     }
@@ -50,7 +54,7 @@ impl Rectangle {
         self.width > 0
     }
 
-    fn can_hold(&self, other: &Rectangle) -> bool {
+    pub fn can_hold(&self, other: &Rectangle) -> bool {
         match (self.width >= self.height, other.width >= other.height) {
             (true, true) | (false, false) => {
                 self.width >= other.width && self.height >= other.height

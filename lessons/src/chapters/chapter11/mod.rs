@@ -2,6 +2,8 @@
 use color_eyre::Result;
 
 pub fn main() -> Result<()> {
+    // The rest is in lib.rs
+
     Ok(())
 }
 

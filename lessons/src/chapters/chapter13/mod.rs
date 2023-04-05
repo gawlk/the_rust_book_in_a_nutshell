@@ -1,8 +1,14 @@
 #![allow(unused)]
+
 use color_eyre::Result;
 
+mod closures;
+mod iterators;
+
 pub fn main() -> Result<()> {
-    println!("heyo");
+    // closures::main();
+
+    iterators::main();
 
     Ok(())
 }

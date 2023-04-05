@@ -210,7 +210,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "the_rust_book_in_a_nutshell"
+name = "the_rust_book_in_a_nutshell_lessons"
 version = "0.1.0"
 dependencies = [
  "color-eyre",

@@ -3,6 +3,7 @@ use color_eyre::Result;
 mod chapter10;
 pub mod chapter11;
 mod chapter13;
+pub mod chapter14;
 mod chapter2;
 mod chapter3;
 mod chapter4;

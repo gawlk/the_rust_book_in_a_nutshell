@@ -1,4 +1,4 @@
-use the_rust_book_in_a_nutshell::add_two;
+use the_rust_book_in_a_nutshell_lessons::add_two;
 
 mod common;
 

@@ -1,8 +1,15 @@
+//! # My Crate (Lessons)
+//!
+//! `my_crate` is a collection of utilities to make performing certain
+//! calculations more convenient.
+
 #![allow(unused)]
 // Point of entry for library crates
 // mod chapters;
 mod chapters;
+
 use crate::chapters::chapter7::Appéritif;
+pub use chapters::chapter14::*; // pub all from chapter14
 use chapters::chapter5::Rectangle;
 use chapters::chapter7;
 
@@ -44,7 +51,7 @@ fn internal_adder(a: i32, b: i32) -> i32 {
     a + b
 }
 
-#[cfg(test)] // To be ran/compiled only durign tests
+#[cfg(test)] // To be ran/compiled only during tests
 mod tests {
     use super::*;
 

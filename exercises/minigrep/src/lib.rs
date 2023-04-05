@@ -47,7 +47,7 @@ pub fn run(config: Config) -> Result<()> {
 }
 
 fn search<'a>(query: &str, content: &'a str, ignore_case: bool) -> Vec<&'a str> {
-    let convert_str = |str: &str| -> String {
+    let format_str = |str: &str| -> String {
         if ignore_case {
             str.to_lowercase()
         } else {
@@ -55,11 +55,11 @@ fn search<'a>(query: &str, content: &'a str, ignore_case: bool) -> Vec<&'a str> 
         }
     };
 
-    let query = convert_str(query);
+    let query = format_str(query);
 
     content
         .lines()
-        .filter(|line| convert_str(line).contains(&query))
+        .filter(|line| format_str(line).contains(&query))
         .collect()
 }
 
